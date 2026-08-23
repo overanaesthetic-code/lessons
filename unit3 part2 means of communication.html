@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#FF2E93">
+<title>Means of Communication — IELTS B2 Listening, Reading &amp; Speaking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#FF2E93;
+  --pink-soft:#FFEAF4;
+  --pink-line:#FFC2DF;
+  --ink:#0A0A0C;
+  --ink-2:#3A3A40;
+  --muted:#75757E;
+  --line:#E6E6EA;
+  --surface:#F7F7F9;
+  --white:#FFFFFF;
+  --ok:#00976A;
+  --ok-soft:#E6F6F0;
+  --no:#D92D3E;
+  --no-soft:#FDECEE;
+  --amber:#B87400;
+  --amber-soft:#FFF4E0;
+  --r:14px;
+  --shadow:0 1px 2px rgba(10,10,12,.04), 0 8px 28px -12px rgba(10,10,12,.10);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--white);color:var(--ink);
+  font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.02em;margin:0;line-height:1.02}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--pink);font-weight:600;
+}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+
+/* ---------- HERO ---------- */
+header.hero{border-bottom:1px solid var(--line);padding:40px 0 26px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.signal{display:flex;align-items:flex-end;gap:5px;height:34px;margin-bottom:20px}
+.signal i{display:block;width:9px;background:var(--pink-line);border-radius:2px;animation:pulse 2.6s ease-in-out infinite}
+.signal i:nth-child(1){height:22%;animation-delay:0s}
+.signal i:nth-child(2){height:40%;animation-delay:.12s}
+.signal i:nth-child(3){height:58%;animation-delay:.24s}
+.signal i:nth-child(4){height:76%;animation-delay:.36s}
+.signal i:nth-child(5){height:100%;background:var(--pink);animation-delay:.48s}
+@keyframes pulse{0%,100%{opacity:.35;transform:scaleY(.82)}50%{opacity:1;transform:scaleY(1)}}
+h1.title{font-size:clamp(44px,7.5vw,74px);letter-spacing:.005em}
+h1.title span{color:var(--pink)}
+.subtitle{font-size:16px;color:var(--muted);max-width:58ch;margin-top:12px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:100px;padding:6px 13px;color:var(--ink-2);background:var(--white)}
+.chip.hot{border-color:var(--pink);color:var(--pink);background:var(--pink-soft)}
+
+/* ---------- teacher session plan ---------- */
+.plan{border:2px solid var(--ink);border-radius:14px;padding:14px 20px;margin:22px 0 0}
+.plan summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.plan summary::-webkit-details-marker{display:none}
+.plan summary::after{content:"show";font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-left:auto;border:1px solid var(--pink-line);border-radius:100px;padding:3px 10px}
+.plan[open] summary::after{content:"hide"}
+.plan[open]{padding-bottom:16px}
+.plan[open] summary{margin-bottom:10px}
+.plan .eyebrow{margin-bottom:6px}
+.plan h3{font-size:21px;margin-bottom:2px}
+.plan p.lead{font-size:13.5px;color:var(--muted);margin:4px 0 12px}
+.plan-row{display:grid;grid-template-columns:76px 1fr;gap:12px;padding:8px 0;border-top:1px dashed var(--line);font-size:14px;align-items:baseline}
+.plan-row:first-of-type{border-top:0}
+.plan-row b{font-family:'IBM Plex Mono',monospace;color:var(--pink);font-size:12px;font-weight:600;white-space:nowrap}
+
+/* ---------- NAV ---------- */
+nav.tabs{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tabs-inner{display:flex;gap:4px;overflow-x:auto;padding:10px 22px;max-width:920px;margin:0 auto;scrollbar-width:none}
+.tabs-inner::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:0;background:transparent;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 13px;border-radius:100px;transition:.16s;white-space:nowrap;font-weight:500}
+.tab:hover{color:var(--ink);background:var(--surface)}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.tab b{color:var(--pink);font-weight:600;margin-right:6px}
+.tab[aria-selected="true"] b{color:var(--pink-line)}
+
+/* ---------- SECTIONS ---------- */
+.panel{display:none;padding:28px 0 90px;animation:fade .3s ease}
+.panel.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.sec-head{border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:24px}
+.sec-head h2{font-size:clamp(30px,5vw,42px)}
+.sec-head p{color:var(--muted);font-size:15px;margin:8px 0 0}
+
+.task{border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;margin:0 0 22px;background:var(--white);box-shadow:var(--shadow)}
+.task > h3{font-size:26px;margin-bottom:4px}
+.task-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:.14em;font-weight:600;display:block;margin-bottom:8px}
+.rubric{font-size:14.5px;color:var(--muted);margin:6px 0 16px;max-width:80ch}
+.note{background:var(--surface);border-left:3px solid var(--pink);border-radius:0 10px 10px 0;padding:14px 16px;font-size:14.5px;margin:16px 0}
+.note strong{color:var(--ink)}
+.callout{background:var(--pink-soft);border:1px solid var(--pink-line);border-radius:12px;padding:16px 18px;margin:18px 0;font-size:15px}
+
+ol.qs{list-style:none;counter-reset:q;padding:0;margin:0}
+ol.qs > li{counter-increment:q;position:relative;padding:0 0 0 34px;margin:0 0 15px}
+ol.qs > li::before{content:counter(q);position:absolute;left:0;top:2px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--pink);font-weight:600;border:1px solid var(--pink-line);border-radius:6px;width:23px;height:23px;display:flex;align-items:center;justify-content:center;background:var(--pink-soft)}
+
+input[type=text]{font-family:'Manrope',sans-serif;font-size:16px;font-weight:600;color:var(--pink);border:0;border-bottom:2px solid var(--pink-line);background:transparent;padding:2px 4px;min-width:110px;outline:none;transition:.16s}
+input[type=text]:focus{border-color:var(--pink);background:var(--pink-soft)}
+input.w{min-width:150px}
+input.correct{border-color:var(--ok);color:var(--ok);background:var(--ok-soft)}
+input.wrong{border-color:var(--no);color:var(--no);background:var(--no-soft)}
+select{font-family:'Manrope',sans-serif;font-size:16px;font-weight:600;color:var(--ink);border:1.5px solid var(--line);border-radius:9px;padding:7px 9px;background:var(--white);outline:none;cursor:pointer;max-width:100%}
+select:focus{border-color:var(--pink)}
+
+.btn{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border:1.5px solid var(--ink);background:var(--ink);color:#fff;border-radius:100px;padding:10px 20px;cursor:pointer;transition:.16s}
+.btn:hover{background:var(--pink);border-color:var(--pink)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--pink);color:var(--pink);background:var(--pink-soft)}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:20px}
+.score{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:600;color:var(--ink-2);padding:8px 0}
+.score.good{color:var(--ok)}
+.score.bad{color:var(--no)}
+
+/* two-column ranking */
+.match{display:grid;gap:7px}
+.match.cols2{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 18px}
+.match.cols2 .term{min-width:0}
+@media(max-width:720px){.match.cols2{grid-template-columns:1fr}}
+.match-row{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:center;padding:6px 11px;border:1px solid var(--line);border-radius:9px;background:var(--white);min-height:38px}
+
+/* word bank */
+.bank{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 20px}
+.bank span{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;border:1px solid var(--pink-line);background:var(--pink-soft);color:var(--pink);border-radius:100px;padding:5px 12px}
+
+/* vocab reference cards */
+.vocgroup{margin:22px 0 8px}
+.vocgroup:first-child{margin-top:2px}
+.vocgroup h4{font-size:13px;font-family:'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);font-weight:600;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:12px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:8px}
+.vcard{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:var(--white)}
+.vcard b{display:block;font-size:16px;margin-bottom:2px}
+.vcard .pos{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--pink);text-transform:uppercase;letter-spacing:.1em}
+.vcard p{margin:6px 0 0;font-size:14px;color:var(--ink-2)}
+.vcard em{display:block;margin-top:7px;font-size:13.5px;color:var(--muted);border-left:2px solid var(--pink-line);padding-left:9px;font-style:normal}
+
+/* MCQ */
+.mcq{display:grid;gap:7px;margin-top:8px}
+.opt{border:1.5px solid var(--line);border-radius:10px;padding:9px 13px;cursor:pointer;font-size:15px;background:var(--white);transition:.14s;user-select:none}
+.opt:hover{border-color:var(--pink-line);background:var(--pink-soft)}
+.opt.sel{border-color:var(--pink);background:var(--pink-soft);font-weight:600}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrongpick{border-color:var(--no);background:var(--no-soft)}
+
+/* TFNG */
+.tfng-item{border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:9px;background:var(--white)}
+@media(min-width:780px){
+  .tfng-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 20px;align-items:center}
+  .tfng-item .tfng-stmt{margin-bottom:0}
+  .tfng-item .expl{grid-column:1 / -1;margin-top:2px}
+}
+.tfng-stmt{font-size:15.5px;display:flex;gap:11px;margin-bottom:11px}
+.tfng-stmt .n{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--pink);font-weight:600;padding-top:4px}
+.tfng-btns{display:flex;gap:7px;flex-wrap:wrap}
+.tf{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;font-weight:600;border:1.5px solid var(--line);background:var(--white);border-radius:100px;padding:7px 15px;cursor:pointer;transition:.14s;color:var(--ink-2)}
+.tf:hover{border-color:var(--pink-line);color:var(--pink)}
+.tf.sel{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tf.right{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.tf.wrongpick{background:var(--no-soft);border-color:var(--no);color:var(--no)}
+.expl{display:none;margin-top:12px;border-top:1px dashed var(--line);padding-top:11px;font-size:14.5px;color:var(--ink-2)}
+.expl.show{display:block}
+.expl .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:5px;font-weight:600}
+.expl q{color:var(--ink);font-style:italic}
+
+/* video */
+.video-embed{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#0A0A0C;box-shadow:var(--shadow);margin:6px 0 10px}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-links{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.video-links a{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;border:1px solid var(--line);border-radius:100px;padding:6px 13px;color:var(--ink-2);text-decoration:none;transition:.14s;background:var(--white)}
+.video-links a:hover{border-color:var(--pink);color:var(--pink);background:var(--pink-soft)}
+.video-fallback{font-size:12.5px;color:var(--muted);margin:0 0 18px}
+.video-fallback a{color:var(--pink)}
+.timecodes{display:flex;flex-wrap:wrap;gap:8px 16px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);margin:0 0 18px;padding:10px 14px;background:var(--surface);border-radius:10px}
+.timecodes b{color:var(--pink)}
+
+/* reading passage */
+.passage{border:1px solid var(--line);border-left:4px solid var(--pink);border-radius:0 12px 12px 0;padding:22px 24px;background:var(--surface);margin:18px 0 24px}
+.passage h4{font-size:24px;margin-bottom:4px}
+.passage .src{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.passage p{margin:0 0 13px;font-size:15.5px;line-height:1.7;max-width:76ch}
+.passage p:last-child{margin-bottom:0}
+.passage .pnum{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--pink);font-weight:600;margin-right:8px}
+@media(min-width:820px) and (min-height:600px){
+  .passage.pin{position:sticky;top:52px;z-index:6;max-height:42vh;overflow-y:auto;box-shadow:0 10px 22px -16px rgba(10,10,12,.55);border-bottom:2px solid var(--pink-line)}
+  .passage.pin p{max-width:none}
+  [data-tfng] .tfng-item,.qgrid .task{scroll-margin-top:calc(42vh + 76px)}
+}
+.pin-note{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:-14px 0 14px;display:none}
+@media(min-width:820px) and (min-height:600px){.pin-note{display:block}}
+
+/* speaking */
+.cue{border:2px solid var(--ink);border-radius:14px;padding:22px 24px;background:var(--white)}
+.cue h4{font-size:24px;margin-bottom:12px}
+.cue ul{margin:10px 0 0;padding-left:20px;font-size:15.5px}
+.cue li{margin-bottom:5px}
+.timer-box{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:20px;padding-top:18px;border-top:1px dashed var(--line)}
+.clock{font-family:'Bebas Neue',sans-serif;font-size:46px;letter-spacing:.04em;line-height:1;min-width:100px}
+.clock.run{color:var(--pink)}
+.clock.done{color:var(--no)}
+.voice-tag{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pink);background:var(--pink-soft);border:1px solid var(--pink-line);border-radius:100px;padding:4px 11px;margin-bottom:10px}
+
+.pfam{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:12px}
+.pfam h4{background:var(--ink);color:#fff;font-size:19px;padding:10px 16px;letter-spacing:.04em}
+.pfam ul{list-style:none;margin:0;padding:13px 16px;display:grid;gap:6px}
+.pfam li{font-size:14.5px;padding-left:16px;position:relative}
+.pfam li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--pink);border-radius:2px}
+
+/* tracker */
+.tracker-head{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;border:2px solid var(--ink);border-radius:14px;padding:22px 24px;margin-bottom:26px}
+.big-num{font-family:'Bebas Neue',sans-serif;font-size:64px;line-height:.9;color:var(--pink)}
+.big-num small{font-size:22px;color:var(--muted)}
+.meter{display:flex;gap:4px;align-items:flex-end;height:52px}
+.meter i{width:11px;background:var(--line);border-radius:3px;transition:.4s}
+.meter i.on{background:var(--pink)}
+.meter i:nth-child(1){height:30%}.meter i:nth-child(2){height:44%}.meter i:nth-child(3){height:58%}
+.meter i:nth-child(4){height:72%}.meter i:nth-child(5){height:86%}.meter i:nth-child(6){height:100%}
+.track-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px}
+.track-list label{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:14.5px;transition:.14s;background:var(--white)}
+.track-list label:hover{border-color:var(--pink-line)}
+.track-list input{accent-color:var(--pink);margin-top:3px;width:16px;height:16px;flex:0 0 auto}
+.track-list input:checked + span{color:var(--pink);font-weight:700}
+.track-list span{line-height:1.35}
+
+details.reveal{margin-top:14px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+details.reveal summary{cursor:pointer;padding:11px 15px;background:var(--surface);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--ink-2);list-style:none}
+details.reveal summary::-webkit-details-marker{display:none}
+details.reveal summary::before{content:"▸ ";color:var(--pink)}
+details.reveal[open] summary::before{content:"▾ "}
+details.reveal .body{padding:15px 17px;font-size:14.5px;border-top:1px solid var(--line)}
+details.reveal .body p{margin:0 0 9px}
+details.reveal .body p:last-child{margin:0}
+
+/* floating tracker */
+.fab{position:fixed;right:20px;bottom:20px;z-index:120;display:flex;align-items:center;gap:11px;background:var(--ink);color:#fff;border:0;border-radius:100px;padding:11px 18px 11px 15px;cursor:pointer;box-shadow:0 6px 26px -6px rgba(255,46,147,.55),0 2px 8px rgba(0,0,0,.2);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;transition:.18s}
+.fab:hover{background:var(--pink)}
+.fab-meter{display:flex;align-items:flex-end;gap:2.5px;height:17px}
+.fab-meter i{width:3.5px;background:rgba(255,255,255,.28);border-radius:2px;transition:.35s}
+.fab-meter i.on{background:var(--pink)}
+.fab:hover .fab-meter i.on{background:#fff}
+.fab-meter i:nth-child(1){height:34%}.fab-meter i:nth-child(2){height:47%}.fab-meter i:nth-child(3){height:60%}
+.fab-meter i:nth-child(4){height:73%}.fab-meter i:nth-child(5){height:86%}.fab-meter i:nth-child(6){height:100%}
+.fab-count{background:rgba(255,255,255,.14);border-radius:100px;padding:3px 9px;font-size:11px}
+.tpanel{position:fixed;right:20px;bottom:20px;z-index:130;width:344px;max-width:calc(100vw - 32px);max-height:min(76vh,660px);display:none;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 60px -18px rgba(10,10,12,.35),0 2px 10px rgba(10,10,12,.10);overflow:hidden}
+.tpanel.open{display:flex;animation:rise .22s ease}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.tpanel-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:16px 16px 12px;border-bottom:1px solid var(--line)}
+.tpanel-count{font-family:'Bebas Neue',sans-serif;font-size:38px;line-height:.95;color:var(--pink)}
+.tpanel-count small{font-size:16px;color:var(--muted)}
+.tclose{border:0;background:var(--surface);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;color:var(--ink-2);line-height:1;flex:0 0 auto}
+.tclose:hover{background:var(--pink-soft);color:var(--pink)}
+.tbar{height:4px;background:var(--surface)}
+.tbar span{display:block;height:100%;width:0;background:var(--pink);transition:width .35s}
+.tmsg{font-size:12.5px;color:var(--muted);padding:9px 16px 0}
+.tbody{overflow-y:auto;padding:12px 16px 4px;flex:1}
+.tgroup h5{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);font-weight:600;margin:6px 0 8px}
+.tgroup + .tgroup{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px}
+.tpanel .track-list{grid-template-columns:1fr;gap:5px}
+.tpanel .track-list label{padding:7px 10px;font-size:13.5px;border-radius:8px}
+.tpanel-foot{padding:11px 16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tpanel-foot .btn{padding:7px 14px;font-size:10.5px}
+.tpanel-foot em{font-size:11.5px;color:var(--muted);font-style:normal;font-family:'IBM Plex Mono',monospace}
+@media(max-width:560px){
+  .tpanel{right:0;left:0;bottom:0;width:100%;max-width:100%;border-radius:18px 18px 0 0;max-height:82vh}
+  .fab{right:14px;bottom:14px;padding:10px 15px 10px 13px}
+  .fab-txt{display:none}
+}
+
+/* ---------- tap-to-load video ---------- */
+.video-play{
+  position:absolute;inset:0;width:100%;height:100%;border:0;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  background:linear-gradient(150deg,#141418,#26161f);color:#fff;
+}
+.play-ring{
+  width:60px;height:60px;border-radius:50%;background:var(--pink);
+  display:flex;align-items:center;justify-content:center;font-size:22px;padding-left:4px;
+  box-shadow:0 8px 26px -6px rgba(255,46,147,.7);transition:.18s;
+}
+.video-play:hover .play-ring{transform:scale(1.06)}
+.play-txt{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-top:6px}
+.play-sub{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;color:rgba(255,255,255,.55)}
+
+/* ---------- answer report ---------- */
+.report{margin-top:16px;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:none}
+.report.show{display:block}
+.report textarea{
+  width:100%;border:0;outline:none;resize:vertical;min-height:190px;padding:14px 15px;
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.6;color:var(--ink-2);background:var(--surface);
+}
+.report-foot{padding:10px 14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.copied{color:var(--ok);font-weight:700}
+
+/* ---------- mobile passage drawer ---------- */
+.peek{
+  display:none;position:fixed;left:0;right:0;bottom:calc(66px + env(safe-area-inset-bottom));
+  z-index:110;background:var(--white);border-top:2px solid var(--pink);
+  max-height:52vh;overflow-y:auto;padding:14px 18px 18px;
+  box-shadow:0 -14px 40px -18px rgba(10,10,12,.5);
+}
+.peek.open{display:block}
+.peek h5{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);font-weight:600;margin:0 0 8px}
+.peek p{font-size:14.5px;line-height:1.6;margin:0 0 11px}
+.peek .pnum{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--pink);font-weight:600;margin-right:7px}
+.peek-btn{
+  display:none;position:sticky;top:8px;z-index:8;margin:0 0 12px;
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
+  border:1.5px solid var(--pink);background:var(--pink-soft);color:var(--pink);
+  border-radius:100px;padding:10px 18px;cursor:pointer;width:100%;
+}
+@media(max-width:819px){.peek-btn{display:block}}
+
+footer{border-top:1px solid var(--line);padding:30px 0 60px;text-align:center}
+footer p{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0}
+footer b{color:var(--pink)}
+
+@media(max-width:600px){
+  body{font-size:16px}
+  .task{padding:19px 17px}
+  .passage{padding:18px 17px}
+  .wrap{padding:0 16px}
+  .tabs-inner{padding:9px 16px}
+  .plan-row{grid-template-columns:62px 1fr}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+
+/* ================= MOBILE / TELEGRAM ================= */
+@media(max-width:720px){
+  nav.tabs{
+    position:fixed;top:auto;bottom:0;left:0;right:0;
+    border-top:1px solid var(--line);border-bottom:0;
+    padding-bottom:env(safe-area-inset-bottom);
+    box-shadow:0 -6px 20px -14px rgba(10,10,12,.5);
+  }
+  .tabs-inner{padding:7px 10px;gap:2px;justify-content:flex-start}
+  .tab{font-size:10.5px;padding:10px 12px;letter-spacing:.05em;min-height:40px}
+  main.wrap{padding-bottom:12px}
+  body{padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+  .panel{padding:22px 0 30px}
+  .fab{bottom:calc(78px + env(safe-area-inset-bottom));right:14px}
+  .tpanel{bottom:calc(66px + env(safe-area-inset-bottom));right:0;left:0;width:100%;max-width:100%;border-radius:18px 18px 0 0;max-height:62vh}
+  .task{padding:18px 16px;margin-bottom:16px}
+  .task > h3{font-size:23px}
+  .vgrid{grid-template-columns:1fr}
+  .opt,.tf,.btn,.track-list label{min-height:44px;display:flex;align-items:center}
+  .opt{padding:11px 14px}
+  .tf{justify-content:center;flex:1 1 30%;padding:11px 8px}
+  .tfng-btns{gap:6px}
+  .btn{justify-content:center;padding:12px 18px}
+  .btn-row{gap:8px}
+  .btn-row .btn{flex:1 1 auto}
+  .clock{font-size:38px;min-width:82px}
+  .timer-box{gap:10px}
+  .plan-row{grid-template-columns:56px 1fr;font-size:13.5px}
+  ol.qs > li{padding-left:31px}
+  .video-links a{flex:1 1 auto;text-align:center;padding:11px 12px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="eyebrow">Unit 3 extension · Part 2 · IELTS Academic</div>
+    <h1 class="title">Means of<br>communi<span>cation</span></h1>
+    <p class="subtitle">Listening, reading and speaking practice, built for an asynchronous lesson in chat: work through it at your own pace and send your answers as you go.</p>
+    <div class="meta">
+      <span class="chip hot">Level B2 · Target 6.5</span>
+      <span class="chip">Listening</span>
+      <span class="chip">Reading</span>
+      <span class="chip">Speaking</span>
+      <span class="chip">≈ 90 min</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <details class="plan">
+    <summary><span class="eyebrow">For the teacher</span><h3>Running this in Telegram · 90 minutes</h3></summary>
+    <p class="lead">Paste each stage as a message when it's time. The student works inside this file and reports back — text for objective answers, voice messages for anything spoken.</p>
+    <div class="note" style="margin:0 0 14px"><strong>Sending it:</strong> upload this file to GitHub Pages and send the <em>link</em>, not the file. Telegram opens links in its own browser, where everything works; sent as an attachment, iOS often refuses to open an .html at all. Send the BBC video as a separate link message too — Telegram gives it a native inline player.</div>
+    <div class="plan-row"><b>0–10</b><span><strong>Warm-up.</strong> Send the two Task 1 prompts as text. She can reply in the chat.</span></div>
+    <div class="plan-row"><b>10–20</b><span><strong>Vocabulary.</strong> Point her to Section 02 — reference only, plus one quick check.</span></div>
+    <div class="plan-row"><b>20–45</b><span><strong>Listening.</strong> She opens Section 03, watches the video once or twice, and answers in the file. Ask her to paste her note-completion answers into the chat when done.</span></div>
+    <div class="plan-row"><b>45–65</b><span><strong>Reading.</strong> Section 04, self-checked in the file. Ask for her score + one sentence on what tripped her up.</span></div>
+    <div class="plan-row"><b>65–88</b><span><strong>Speaking.</strong> Section 05. She records Part 1 as one voice message, then Part 2, then Part 3 — three separate voice notes sent to the chat.</span></div>
+    <div class="plan-row"><b>88–90</b><span><strong>Wrap-up.</strong> She opens the tracker and taps everything she used today, then taps "Build my results" and pastes it into the chat.</span></div>
+  </details>
+</div>
+
+<nav class="tabs" role="tablist" aria-label="Lesson sections">
+  <div class="tabs-inner">
+    <button class="tab" role="tab" aria-selected="true" data-go="s1"><b>01</b>Warm-up</button>
+    <button class="tab" role="tab" aria-selected="false" data-go="s2"><b>02</b>Vocabulary</button>
+    <button class="tab" role="tab" aria-selected="false" data-go="s3"><b>03</b>Listening</button>
+    <button class="tab" role="tab" aria-selected="false" data-go="s4"><b>04</b>Reading</button>
+    <button class="tab" role="tab" aria-selected="false" data-go="s5"><b>05</b>Speaking</button>
+    <button class="tab" role="tab" aria-selected="false" data-go="s6"><b>06</b>Tracker</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ================= SECTION 1 : WARM-UP ================= -->
+<section class="panel active" id="s1">
+  <div class="sec-head">
+    <h2>01 · Warm-up</h2>
+    <p>Ten minutes to activate the topic before the new material.</p>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 1.1 · Speaking</span>
+    <h3>Every way you can think of</h3>
+    <p class="rubric">Answer in the chat, in a voice message or in text — whichever is faster for you right now.</p>
+    <ol class="qs">
+      <li>How many different ways can you think of to send someone a message? Give yourself one minute and list as many as possible.</li>
+      <li>Which method from your list do you use most? Which do you use least, or never?</li>
+      <li>Do you communicate differently with friends than with teachers or colleagues? How?</li>
+      <li>Think of the last time you couldn't get through to someone — a company, a friend, a family member. What happened, and how did you feel?</li>
+      <li>Has communication become easier or harder over the last ten years, in your opinion? Why?</li>
+    </ol>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 1.2 · Ranking</span>
+    <h3>Fastest to slowest</h3>
+    <p class="rubric">Rank these six from <strong>1 = fastest way to get a real answer</strong> to <strong>6 = slowest</strong>. There's no fixed answer — be ready to justify your order.</p>
+    <div class="match cols2" id="rank">
+      <div class="match-row"><select data-rank><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><span class="term" style="font-weight:600">A phone call</span></div>
+      <div class="match-row"><select data-rank><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><span class="term" style="font-weight:600">A text message</span></div>
+      <div class="match-row"><select data-rank><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><span class="term" style="font-weight:600">An email</span></div>
+      <div class="match-row"><select data-rank><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><span class="term" style="font-weight:600">Face-to-face</span></div>
+      <div class="match-row"><select data-rank><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><span class="term" style="font-weight:600">A video call</span></div>
+      <div class="match-row"><select data-rank><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><span class="term" style="font-weight:600">A social media DM</span></div>
+    </div>
+    <div class="note"><strong>Keep this order in mind</strong> — you'll meet several of these words again as vocabulary in the next section.</div>
+  </div>
+</section>
+
+<!-- ================= SECTION 2 : VOCABULARY ================= -->
+<section class="panel" id="s2">
+  <div class="sec-head">
+    <h2>02 · Vocabulary</h2>
+    <p>Twenty-four words and phrases for talking about how people communicate. Read them once now — you'll meet them again in the listening, reading and speaking ahead.</p>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Reference</span>
+    <h3>Means of communication</h3>
+
+    <div class="vocgroup">
+      <h4>Channels &amp; modes</h4>
+      <div class="vgrid">
+        <div class="vcard"><span class="pos">adj / adv</span><b>face-to-face</b><p>with both people physically present, not through a screen or phone</p><em>Some conversations really are better face-to-face.</em></div>
+        <div class="vcard"><span class="pos">adjective</span><b>synchronous</b><p>happening at the same time — both sides are present together</p><em>A phone call is synchronous: you're both talking live.</em></div>
+        <div class="vcard"><span class="pos">adjective</span><b>asynchronous</b><p>not happening at the same time — there's a gap before the reply</p><em>Email is asynchronous; nobody expects an instant answer.</em></div>
+        <div class="vcard"><span class="pos">noun, uncountable</span><b>correspondence</b><p>letters, emails or messages exchanged over time</p><em>Keep all correspondence with the university in one folder.</em></div>
+        <div class="vcard"><span class="pos">phrase</span><b>word of mouth</b><p>information passed from person to person by speaking</p><em>The café became popular purely by word of mouth.</em></div>
+        <div class="vcard"><span class="pos">phrase</span><b>a means of communication</b><p>a method or channel used to exchange information</p><em>Email remains the main means of communication in most offices.</em></div>
+      </div>
+    </div>
+
+    <div class="vocgroup">
+      <h4>Verbs &amp; collocations</h4>
+      <div class="vgrid">
+        <div class="vcard"><span class="pos">verb</span><b>convey</b><p>to communicate an idea or feeling so others understand it</p><em>Her tone conveyed more than her words did.</em></div>
+        <div class="vcard"><span class="pos">phrasal verb</span><b>get through to someone</b><p>to reach someone by phone, or to make them understand</p><em>I couldn't get through to the office all morning.</em></div>
+        <div class="vcard"><span class="pos">phrase</span><b>keep someone posted / in the loop</b><p>to continue giving someone updates</p><em>Keep me posted on how the interview goes.</em></div>
+        <div class="vcard"><span class="pos">verb</span><b>liaise (with)</b><p>to communicate and cooperate with another person or team</p><em>She liaises with our suppliers in Germany.</em></div>
+        <div class="vcard"><span class="pos">phrase</span><b>touch base</b><p>to make brief contact, usually to check in</p><em>Let's touch base again next week.</em></div>
+        <div class="vcard"><span class="pos">verb</span><b>correspond (with)</b><p>to exchange letters or messages regularly, over time</p><em>They've corresponded since university.</em></div>
+      </div>
+    </div>
+
+    <div class="vocgroup">
+      <h4>Breakdowns &amp; barriers</h4>
+      <div class="vgrid">
+        <div class="vcard"><span class="pos">phrase</span><b>a communication breakdown</b><p>a situation where people fail to understand each other</p><em>The project failed because of a communication breakdown.</em></div>
+        <div class="vcard"><span class="pos">phrase</span><b>a barrier to communication</b><p>anything that makes communication harder</p><em>Jargon can be a real barrier to communication.</em></div>
+        <div class="vcard"><span class="pos">adjective</span><b>ambiguous</b><p>able to be understood in more than one way; unclear</p><em>His instructions were ambiguous, so we all did something different.</em></div>
+        <div class="vcard"><span class="pos">verb</span><b>misinterpret</b><p>to understand something wrongly</p><em>She misinterpreted his silence as agreement.</em></div>
+        <div class="vcard"><span class="pos">idiom</span><b>at cross purposes</b><p>talking about different things without realising it</p><em>I think we were talking at cross purposes the whole meeting.</em></div>
+        <div class="vcard"><span class="pos">idiom</span><b>lost in translation</b><p>meaning that disappears or changes between languages or contexts</p><em>A lot of humour gets lost in translation.</em></div>
+      </div>
+    </div>
+
+    <div class="vocgroup">
+      <h4>Qualities of a good communicator</h4>
+      <div class="vgrid">
+        <div class="vcard"><span class="pos">adjective</span><b>empathetic</b><p>able to understand and share someone else's feelings</p><em>A good manager is empathetic as well as clear.</em></div>
+        <div class="vcard"><span class="pos">adjective</span><b>diplomatic</b><p>careful and tactful, especially in difficult situations</p><em>She gave diplomatic feedback that didn't upset anyone.</em></div>
+        <div class="vcard"><span class="pos">adjective</span><b>tactful</b><p>careful not to say or do things that could offend</p><em>He found a tactful way to point out the mistake.</em></div>
+        <div class="vcard"><span class="pos">adjective</span><b>receptive</b><p>willing to listen to and consider new ideas</p><em>The tutor was receptive to our suggestions.</em></div>
+        <div class="vcard"><span class="pos">adjective</span><b>articulate</b><p>able to express ideas clearly and effectively</p><em>She's remarkably articulate for a first-year student.</em></div>
+        <div class="vcard"><span class="pos">phrase</span><b>build rapport</b><p>to develop an easy relationship of understanding</p><em>He built rapport with the group in minutes.</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 2.1 · Quick check</span>
+    <h3>Which word fits?</h3>
+    <p class="rubric">One try each — click your answer.</p>
+    <div id="voc-mcq" data-label="Vocabulary check">
+      <ol class="qs">
+        <li>I couldn't ________ the office all morning — the line was engaged.
+          <div class="mcq" data-q><div class="opt" data-correct="1">get through to</div><div class="opt">liaise with</div><div class="opt">touch base</div></div></li>
+        <li>Please ________ me posted if anything changes before Friday.
+          <div class="mcq" data-q><div class="opt" data-correct="1">keep</div><div class="opt">convey</div><div class="opt">correspond</div></div></li>
+        <li>The instructions were so ________ that everyone did something different.
+          <div class="mcq" data-q><div class="opt" data-correct="1">ambiguous</div><div class="opt">diplomatic</div><div class="opt">receptive</div></div></li>
+        <li>She's ________ with the marketing team on the new campaign.
+          <div class="mcq" data-q><div class="opt" data-correct="1">liaising</div><div class="opt">pacifying</div><div class="opt">conveying</div></div></li>
+        <li>I think we were talking ________ — you meant Tuesday's meeting, I meant Thursday's.
+          <div class="mcq" data-q><div class="opt" data-correct="1">at cross purposes</div><div class="opt">face-to-face</div><div class="opt">word of mouth</div></div></li>
+        <li>He gave some really ________ feedback — honest, but never unkind.
+          <div class="mcq" data-q><div class="opt" data-correct="1">tactful</div><div class="opt">ambiguous</div><div class="opt">asynchronous</div></div></li>
+        <li>A phone call is ________ — you're both talking in real time.
+          <div class="mcq" data-q><div class="opt" data-correct="1">synchronous</div><div class="opt">asynchronous</div><div class="opt">written</div></div></li>
+        <li>The wordplay in the joke just doesn't work in another language — it gets completely ________.
+          <div class="mcq" data-q><div class="opt" data-correct="1">lost</div><div class="opt">conveyed</div><div class="opt">liaised</div></div></li>
+      </ol>
+    </div>
+    <div class="btn-row"><button class="btn" data-check="voc-mcq">Check answers</button><button class="btn ghost" data-reset="voc-mcq">Clear</button><span class="score" id="sc-voc-mcq"></span></div>
+  </div>
+</section>
+
+<!-- ================= SECTION 3 : LISTENING ================= -->
+<section class="panel" id="s3">
+  <div class="sec-head">
+    <h2>03 · Listening</h2>
+    <p>Six minutes of authentic BBC audio — real speakers, real pace, real hesitations.</p>
+  </div>
+
+  <div class="callout"><strong>Why this episode.</strong> Two BBC presenters discuss what happens when a company you're calling replaces its human staff with AI — and whether a machine can ever really communicate the way a person can. It's the same question this whole unit keeps circling: what does it actually take to get a message across?</div>
+
+  <div class="task">
+    <span class="task-num">Task 3.1 · Before you listen</span>
+    <h3>Predict the meaning</h3>
+    <p class="rubric">These six words and phrases all appear in the recording. Guess what each one means before you listen — then open the answers and check yourself.</p>
+    <div class="bank"><span>yelling</span><span>to pacify someone</span><span>in the near future</span><span>as a matter of fact</span><span>empathetic</span><span>filler words</span></div>
+    <details class="reveal">
+      <summary>Check your guesses</summary>
+      <div class="body">
+        <p><b>yelling</b> — shouting.</p>
+        <p><b>to pacify someone</b> — to calm them down when they're angry.</p>
+        <p><b>in the near future</b> — very soon, within a short time.</p>
+        <p><b>as a matter of fact</b> — used to add emphasis or extra detail to what you've just said.</p>
+        <p><b>empathetic</b> — able to put yourself in someone else's position and share their feelings.</p>
+        <p><b>filler words</b> — sounds like "um" or phrases like "you know", which give a speaker time to think.</p>
+      </div>
+    </details>
+    <div class="note"><strong>Prediction:</strong> before you press play — do you think the two presenters will be more for or against AI answering customer calls? What's your own guess?</div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 3.2 · Watch &amp; listen</span>
+    <h3>Call centres: are you talking to AI?</h3>
+    <p class="rubric">BBC Learning English · 6 Minute English · ~6 minutes. Listen once for the general idea, then again for the tasks below.</p>
+    <div class="video-embed" id="vid" data-yt="KB4Mn5XHdMc">
+      <button class="video-play" id="vidplay" aria-label="Play the episode here">
+        <span class="play-ring">▶</span>
+        <span class="play-txt">Play here</span>
+        <span class="play-sub">BBC Learning English · 6 min</span>
+      </button>
+    </div>
+    <div class="video-links">
+      <a href="https://www.youtube.com/watch?v=KB4Mn5XHdMc" target="_blank" rel="noopener">▶ Open on YouTube</a>
+      <a href="https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241219" target="_blank" rel="noopener">Official page + transcript</a>
+      <a href="https://open.spotify.com/episode/7HAECJtQS02RhCtilnOMxI" target="_blank" rel="noopener">Spotify</a>
+    </div>
+    <p class="video-fallback">If the video doesn't load in this file, tap "Open on YouTube" — same recording, same six minutes.</p>
+    <div class="timecodes">00:00 <b>Intro</b> &nbsp;·&nbsp; 01:30 <b>Quiz question</b> &nbsp;·&nbsp; 02:02 <b>Discussion begins</b> &nbsp;·&nbsp; 05:01 <b>Quiz answer</b> &nbsp;·&nbsp; 05:15 <b>Vocabulary recap</b></div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 3.3 · While listening</span>
+    <h3>The presenters' quiz question</h3>
+    <p class="rubric">Phil and Pippa ask this question near the start — listen for the answer at 05:01.</p>
+    <div id="listen-mcq" data-label="Listening · quiz question">
+      <ol class="qs">
+        <li>Approximately how many people work in call centres worldwide?
+          <div class="mcq" data-q><div class="opt">7 million</div><div class="opt" data-correct="1">17 million</div><div class="opt">27 million</div></div></li>
+      </ol>
+    </div>
+    <div class="btn-row"><button class="btn" data-check="listen-mcq">Check answer</button><button class="btn ghost" data-reset="listen-mcq">Clear</button><span class="score" id="sc-listen-mcq"></span></div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 3.4 · While listening</span>
+    <h3>Note completion</h3>
+    <p class="rubric">Write <strong>no more than two words and/or a number</strong> for each answer.</p>
+    <ol class="qs" id="listen-note" data-label="Listening · note completion">
+      <li>Number of people who work in call centres worldwide, approximately: <input type="text" class="w" data-answer="17 million|17"></li>
+      <li>Full name of the union president interviewed in the programme: <input type="text" class="w" data-answer="mylene cabalona|mylene"></li>
+      <li>Percentage of workers a study predicts could be displaced by AI: <input type="text" class="w" data-answer="27%|27"></li>
+      <li>The human quality the speaker says AI does not have: <input type="text" class="w" data-answer="empathy"></li>
+      <li>The term used for sounds like "um" and phrases like "you know": <input type="text" class="w" data-answer="filler words|fillers"></li>
+    </ol>
+    <div class="btn-row"><button class="btn" data-check="listen-note">Check answers</button><button class="btn ghost" data-reset="listen-note">Clear</button><span class="score" id="sc-listen-note"></span></div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 3.5 · While listening</span>
+    <h3>True, False or Not Given</h3>
+    <div id="listen-tf" data-label="Listening · True/False/NG" data-tfng>
+      <div class="tfng-item" data-ans="FALSE">
+        <div class="tfng-stmt"><span class="n">1</span><span>When a call is finally answered, it is always a human who speaks to the customer.</span></div>
+        <div class="tfng-btns"><button class="tf" data-v="TRUE">True</button><button class="tf" data-v="FALSE">False</button><button class="tf" data-v="NOT GIVEN">Not Given</button></div>
+        <div class="expl"><span class="tag">False</span><p>The programme says this work is increasingly done using AI instead — so "always" a human is contradicted.</p></div>
+      </div>
+      <div class="tfng-item" data-ans="TRUE">
+        <div class="tfng-stmt"><span class="n">2</span><span>Part of Mylene's job involves calming down angry customers.</span></div>
+        <div class="tfng-btns"><button class="tf" data-v="TRUE">True</button><button class="tf" data-v="FALSE">False</button><button class="tf" data-v="NOT GIVEN">Not Given</button></div>
+        <div class="expl"><span class="tag">True</span><p>She describes having to pacify aggravated callers — that's exactly what "calming down angry customers" means.</p></div>
+      </div>
+      <div class="tfng-item" data-ans="TRUE">
+        <div class="tfng-stmt"><span class="n">3</span><span>Mylene believes AI will never completely replace human call centre workers.</span></div>
+        <div class="tfng-btns"><button class="tf" data-v="TRUE">True</button><button class="tf" data-v="FALSE">False</button><button class="tf" data-v="NOT GIVEN">Not Given</button></div>
+        <div class="expl"><span class="tag">True</span><p>She fears widespread job losses, but says outright that AI could never be truly empathetic the way a person can — so full replacement isn't possible in her view.</p></div>
+      </div>
+      <div class="tfng-item" data-ans="FALSE">
+        <div class="tfng-stmt"><span class="n">4</span><span>AI is used only to answer customer calls, not to monitor human workers.</span></div>
+        <div class="tfng-btns"><button class="tf" data-v="TRUE">True</button><button class="tf" data-v="FALSE">False</button><button class="tf" data-v="NOT GIVEN">Not Given</button></div>
+        <div class="expl"><span class="tag">False</span><p>Mylene's own conversations are monitored by AI systems that evaluate her performance — so AI does more than just answer calls.</p></div>
+      </div>
+    </div>
+    <div class="btn-row"><button class="btn" data-checktf="listen-tf">Check answers</button><button class="btn ghost" data-reset="listen-tf">Clear</button><span class="score" id="sc-listen-tf"></span></div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 3.6 · After listening</span>
+    <h3>Talk about it</h3>
+    <p class="rubric">These come back in Speaking Part 3 — it's worth thinking them through now.</p>
+    <ol class="qs">
+      <li>Have you ever spoken to an AI chatbot or an automated phone system? How did it go?</li>
+      <li>What's more frustrating: waiting on hold, or talking to a system that doesn't understand you?</li>
+      <li>Do you think AI could ever fully replace human customer service? Why, or why not?</li>
+      <li>Is empathy something a machine could ever convincingly fake — and would it matter if it could?</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= SECTION 4 : READING ================= -->
+<section class="panel" id="s4">
+  <div class="sec-head">
+    <h2>04 · Reading</h2>
+    <p>One passage, two IELTS Academic task types.</p>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 4.1 · Before you read</span>
+    <h3>Predict</h3>
+    <p class="rubric">The passage is about how workplaces communicate. Before reading: what's the difference between a <em>synchronous</em> and an <em>asynchronous</em> way of communicating? Give one example of each — you met both words in Section 02.</p>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 4.2 · Multiple choice</span>
+    <h3>Always on: the rise of asynchronous communication</h3>
+    <div class="passage pin">
+      <div class="src">Reading passage · ~330 words</div>
+      <p><span class="pnum">A</span>For most of the twentieth century, workplace communication meant either a face-to-face conversation or a synchronous phone call — something that happened in real time, with both people expected to respond immediately. Email, when it first entered offices, changed that expectation: for the first time on a large scale, professional correspondence could be asynchronous, sent and then answered hours or even days later. Today, most workplace messaging — chat platforms, project boards, documents with comments attached — follows the same asynchronous logic, and some researchers argue that this shift has changed white-collar work as much as the internet itself.</p>
+      <p><span class="pnum">B</span>Advocates make a straightforward case. A synchronous culture, where every question demands an immediate reply, forces people to interrupt whatever they are doing to answer it, and interruptions are expensive. Studies of office workers have repeatedly found that it takes several minutes to fully return to a task after a single interruption; a single unnecessary phone call can cost far more than the two minutes it appeared to take. Asynchronous tools let a worker batch their replies, protecting long stretches of focused, uninterrupted time — increasingly called "deep work" — which many jobs depend on.</p>
+      <p><span class="pnum">C</span>Critics point to a different cost: ambiguity. A short message, stripped of tone of voice and facial expression, is far easier to misinterpret than a face-to-face remark, and a reply that takes six hours to arrive is easily read as a barrier rather than simply as someone working through their inbox in order. Teams that rely too heavily on delayed written messages often report more communication breakdowns, not fewer, because small misunderstandings are never caught and corrected in real time the way they would be in conversation. Some managers use the phrase "notification fatigue" to describe employees who, even outside working hours, feel obliged to reply almost instantly out of habit — quietly turning an asynchronous tool back into a synchronous one.</p>
+      <p><span class="pnum">D</span>The organisations that seem to manage this best are not the ones that pick a single method and apply it everywhere, but the ones that choose a channel deliberately: a quick, low-stakes update goes to chat; anything ambiguous, sensitive, or likely to be misread moves to a call or a face-to-face conversation instead. Asynchronous communication, in other words, has not replaced synchronous communication so much as forced every organisation to decide, message by message, which one a given piece of information actually deserves.</p>
+    </div>
+    <p class="pin-note">The passage stays pinned above while you answer — scroll inside it to re-read.</p>
+    <button class="peek-btn" id="peekBtn">▲ Show the passage while I answer</button>
+    <div id="read-mcq" data-label="Reading · multiple choice">
+      <ol class="qs">
+        <li>According to paragraph A, what changed with the introduction of email?
+          <div class="mcq" data-q>
+            <div class="opt">Workplace conversations became mostly face-to-face</div>
+            <div class="opt" data-correct="1">Professional correspondence no longer required an immediate reply</div>
+            <div class="opt">Phone calls replaced written messages completely</div>
+            <div class="opt">Offices became synchronous for the first time</div>
+          </div>
+        </li>
+        <li>According to paragraph B, why can interruptions be expensive?
+          <div class="mcq" data-q>
+            <div class="opt">They are always caused by unnecessary phone calls</div>
+            <div class="opt">They take exactly two minutes to deal with</div>
+            <div class="opt" data-correct="1">Full concentration takes time to rebuild afterwards</div>
+            <div class="opt">Only workers who practise deep work are affected</div>
+          </div>
+        </li>
+        <li>What does the passage suggest is a risk of relying mainly on asynchronous messages?
+          <div class="mcq" data-q>
+            <div class="opt">Messages take too long to write</div>
+            <div class="opt" data-correct="1">Small misunderstandings may not get corrected quickly</div>
+            <div class="opt">Face-to-face conversation disappears completely</div>
+            <div class="opt">Deep work becomes impossible</div>
+          </div>
+        </li>
+        <li>What is "notification fatigue", as described in paragraph C?
+          <div class="mcq" data-q>
+            <div class="opt">Feeling tired from taking too many phone calls</div>
+            <div class="opt" data-correct="1">Replying to messages almost instantly out of habit, even outside work</div>
+            <div class="opt">Avoiding messaging apps altogether</div>
+            <div class="opt">A method for reducing workplace interruptions</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="btn-row"><button class="btn" data-check="read-mcq">Check answers</button><button class="btn ghost" data-reset="read-mcq">Clear</button><span class="score" id="sc-read-mcq"></span></div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Task 4.3 · Summary completion</span>
+    <h3>Complete the summary</h3>
+    <p class="rubric">Use words from the box. There are more words than you need.</p>
+    <div class="bank"><span>ambiguity</span><span>batch</span><span>deliberately</span><span>face-to-face</span><span>immediate</span><span>interruptions</span><span>minutes</span><span>synchronous</span></div>
+    <div id="read-sum" data-label="Reading · summary completion">
+    <p style="font-size:15.5px;line-height:1.85">
+      Before email, most workplace communication was
+      <input type="text" class="w" data-answer="synchronous">, meaning both people took part at the same time. Asynchronous tools later allowed workers to
+      <input type="text" class="w" data-answer="batch"> their replies instead of responding to every message immediately, protecting them from costly
+      <input type="text" class="w" data-answer="interruptions">. However, critics warn that written messages can introduce
+      <input type="text" class="w" data-answer="ambiguity">, since they lack tone of voice and expression. The organisations that manage this best choose a communication channel
+      <input type="text" class="w" data-answer="deliberately">, rather than relying on only one method.
+    </p>
+    </div>
+    <div class="btn-row"><button class="btn" data-check="read-sum">Check answers</button><button class="btn ghost" data-reset="read-sum">Clear</button><span class="score" id="sc-read-sum"></span></div>
+  </div>
+</section>
+
+<!-- ================= SECTION 5 : SPEAKING ================= -->
+<section class="panel" id="s5">
+  <div class="sec-head">
+    <h2>05 · Speaking</h2>
+    <p>Three voice messages — Part 1, Part 2, Part 3. Record each as one take and send it.</p>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Part 1 · 3–4 minutes</span>
+    <h3>Everyday communication</h3>
+    <span class="voice-tag">● record one voice message for all six</span>
+    <p class="rubric">Two to three sentences each — answer, then add a reason or example.</p>
+    <ol class="qs">
+      <li>How do you usually communicate with your close friends?</li>
+      <li>Do you prefer face-to-face conversations or talking on the phone? Why?</li>
+      <li>How quickly do you usually reply to messages?</li>
+      <li>Have you ever had a misunderstanding because of a text message or an email?</li>
+      <li>Do you think people rely on their phones too much to communicate?</li>
+      <li>What's the last app you used to talk to someone?</li>
+    </ol>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Part 2 · Long turn</span>
+    <h3>Cue card</h3>
+    <span class="voice-tag">● record a separate voice message</span>
+    <div class="cue">
+      <h4>Describe a time when a message or piece of information was misunderstood.</h4>
+      <p style="margin:0;font-size:15px;color:var(--muted)">You should say:</p>
+      <ul>
+        <li>what the message was</li>
+        <li>who was communicating with whom</li>
+        <li>what went wrong</li>
+      </ul>
+      <p style="margin-top:12px;font-weight:700">and explain how the misunderstanding was eventually sorted out.</p>
+      <div class="timer-box">
+        <span class="clock" data-clock="t1">01:00</span>
+        <button class="btn" data-start="t1" data-secs="60">1 min · prepare</button>
+        <span class="clock" data-clock="t2">02:00</span>
+        <button class="btn" data-start="t2" data-secs="120">2 min · record</button>
+        <button class="btn ghost" data-stop="t1,t2">Reset both</button>
+      </div>
+    </div>
+    <details class="reveal">
+      <summary>Language to build in</summary>
+      <div class="body">
+        <p><strong>Setting it up:</strong> "It was a message about… sent between… / We were talking at cross purposes without realising it."</p>
+        <p><strong>What went wrong:</strong> a barrier to communication · the instructions were ambiguous · it got completely lost in translation · a real communication breakdown</p>
+        <p><strong>How it resolved:</strong> "In the end we touched base face-to-face and sorted it out in two minutes." · "Once she conveyed what she actually meant, it was obvious."</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Part 3 · 4–5 minutes</span>
+    <h3>Discussion</h3>
+    <span class="voice-tag">● record one voice message for all six</span>
+    <p class="rubric">Longer, more abstract answers. Use a concede-then-state pattern where you can: <em>"Admittedly… but I'd argue…"</em></p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:6px">Cluster A · Technology &amp; communication</p>
+    <ol class="qs">
+      <li>How has technology changed the way people communicate compared to twenty years ago?</li>
+      <li>Do you think written communication is replacing spoken communication?</li>
+      <li>Could AI ever fully replace human communication in customer service?</li>
+    </ol>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);font-weight:600;margin:20px 0 6px">Cluster B · Communication &amp; relationships</p>
+    <ol class="qs">
+      <li>Is it possible to build a genuine relationship with someone you've never met face-to-face?</li>
+      <li>Why do misunderstandings happen even between people who share a first language?</li>
+      <li>Some people say the ability to communicate clearly matters more than intelligence. Do you agree?</li>
+    </ol>
+    <div class="pfam">
+      <h4>Quick reminder</h4>
+      <ul>
+        <li>I'd argue that… <i>— stating a view with weight</i></li>
+        <li>Admittedly…, but… <i>— conceding, then countering</i></li>
+        <li>What strikes me most is… <i>— emphasising your main point</i></li>
+        <li>I'm not entirely convinced that… <i>— disagreeing politely</i></li>
+      </ul>
+    </div>
+    <div class="note">The full 24-phrase opinion bank is in Part 1 of this unit if you want more range before recording.</div>
+  </div>
+</section>
+
+<!-- ================= SECTION 6 : TRACKER ================= -->
+<section class="panel" id="s6">
+  <div class="sec-head">
+    <h2>06 · Vocabulary tracker</h2>
+    <p>Tick an item only once you've <strong>used it yourself</strong> — in a chat message or a voice note — not just recognised it on the page.</p>
+  </div>
+
+  <div class="tracker-head">
+    <div>
+      <div class="eyebrow">Signal strength</div>
+      <div class="big-num"><span id="s6count">0</span><small> / <span id="s6total">0</span></small></div>
+      <div style="font-size:14px;color:var(--muted)" id="s6msg">Nothing transmitted yet.</div>
+    </div>
+    <div class="meter" data-meter aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">How to use it</span>
+    <h3>The tracker lives in the corner</h3>
+    <p class="rubric">It stays on screen through every section, so you can tick items the moment you use them.</p>
+    <div class="btn-row"><button class="btn" id="openTracker">Open the tracker</button></div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Send to your teacher</span>
+    <h3>One tap, then paste into the chat</h3>
+    <p class="rubric">This collects every exercise you've checked, with your score and any answers that were wrong. Tap, then paste it into Telegram.</p>
+    <div class="btn-row">
+      <button class="btn" id="buildReport">Build my results</button>
+      <button class="btn ghost" id="copyReport">Copy to clipboard</button>
+      <span class="score" id="copyState"></span>
+    </div>
+    <div class="report" id="reportBox">
+      <textarea id="reportText" readonly spellcheck="false"></textarea>
+      <div class="report-foot">If the copy button doesn't work in your browser, tap and hold the text above, select all, and copy.</div>
+    </div>
+  </div>
+
+  <div class="task">
+    <span class="task-num">Wrap-up</span>
+    <h3>Before you finish</h3>
+    <ol class="qs">
+      <li>Send one more voice message: in your own words, summarise what the BBC episode was about — 30 seconds is enough.</li>
+      <li>Write three sentences using three unticked words from the tracker.</li>
+      <li>Open the tracker and tick everything you actually said or wrote today.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<button class="fab" id="fab" aria-expanded="false" aria-controls="tpanel">
+  <span class="fab-meter" data-meter aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+  <span class="fab-txt">Tracker</span>
+  <span class="fab-count"><span id="fabnum">0</span>/<span id="fabtot">0</span></span>
+</button>
+
+<aside class="tpanel" id="tpanel" aria-label="Vocabulary tracker">
+  <div class="tpanel-top">
+    <div>
+      <div class="eyebrow">Vocabulary tracker</div>
+      <div class="tpanel-count"><span id="tcount">0</span><small> / <span id="ttotal">0</span></small></div>
+    </div>
+    <button class="tclose" id="tclose" aria-label="Close tracker">&#10005;</button>
+  </div>
+  <div class="tbar"><span id="tfill"></span></div>
+  <div class="tmsg" id="tmsg">Nothing transmitted yet.</div>
+  <div class="tbody">
+    <div class="tgroup">
+      <h5>Means of communication</h5>
+      <div class="track-list" data-track>
+        <label><input type="checkbox"><span>face-to-face</span></label>
+        <label><input type="checkbox"><span>synchronous</span></label>
+        <label><input type="checkbox"><span>asynchronous</span></label>
+        <label><input type="checkbox"><span>correspondence</span></label>
+        <label><input type="checkbox"><span>word of mouth</span></label>
+        <label><input type="checkbox"><span>a means of communication</span></label>
+        <label><input type="checkbox"><span>convey</span></label>
+        <label><input type="checkbox"><span>get through to someone</span></label>
+        <label><input type="checkbox"><span>keep someone posted / in the loop</span></label>
+        <label><input type="checkbox"><span>liaise with</span></label>
+        <label><input type="checkbox"><span>touch base</span></label>
+        <label><input type="checkbox"><span>correspond with</span></label>
+        <label><input type="checkbox"><span>a communication breakdown</span></label>
+        <label><input type="checkbox"><span>a barrier to communication</span></label>
+        <label><input type="checkbox"><span>ambiguous</span></label>
+        <label><input type="checkbox"><span>misinterpret</span></label>
+        <label><input type="checkbox"><span>at cross purposes</span></label>
+        <label><input type="checkbox"><span>lost in translation</span></label>
+        <label><input type="checkbox"><span>empathetic</span></label>
+        <label><input type="checkbox"><span>diplomatic</span></label>
+        <label><input type="checkbox"><span>tactful</span></label>
+        <label><input type="checkbox"><span>receptive</span></label>
+        <label><input type="checkbox"><span>articulate</span></label>
+        <label><input type="checkbox"><span>build rapport</span></label>
+      </div>
+    </div>
+    <div class="tgroup">
+      <h5>From the listening</h5>
+      <div class="track-list" data-track>
+        <label><input type="checkbox"><span>yelling</span></label>
+        <label><input type="checkbox"><span>to pacify someone</span></label>
+        <label><input type="checkbox"><span>in the near future</span></label>
+        <label><input type="checkbox"><span>as a matter of fact</span></label>
+        <label><input type="checkbox"><span>empathy</span></label>
+        <label><input type="checkbox"><span>filler words</span></label>
+      </div>
+    </div>
+  </div>
+  <div class="tpanel-foot">
+    <em>Tick = said or written</em>
+    <button class="btn ghost" id="treset">Clear all</button>
+  </div>
+</aside>
+
+<footer>
+  <div class="wrap"><p>Unit 3 extension · Part 2 · <b>Means of communication</b> · IELTS Academic B2</p></div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var mem = {};
+  var store = {
+    get: function(k){
+      try{
+        if(window.storage && window.storage.get){
+          return window.storage.get(k).then(function(r){ return r && r.value ? JSON.parse(r.value) : null; }).catch(function(){ return null; });
+        }
+      }catch(e){}
+      try{
+        var raw = window.localStorage.getItem(k);
+        if(raw) return Promise.resolve(JSON.parse(raw));
+      }catch(e){}
+      return Promise.resolve(mem[k] || null);
+    },
+    set: function(k,v){
+      mem[k] = v;
+      try{
+        if(window.storage && window.storage.set){
+          return window.storage.set(k, JSON.stringify(v)).catch(function(){});
+        }
+      }catch(e){}
+      try{ window.localStorage.setItem(k, JSON.stringify(v)); }catch(e){}
+      return Promise.resolve(null);
+    }
+  };
+
+  /* ---------- tabs ---------- */
+  var tabs = document.querySelectorAll('.tab');
+  var panels = document.querySelectorAll('.panel');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      tabs.forEach(function(x){ x.setAttribute('aria-selected','false'); });
+      t.setAttribute('aria-selected','true');
+      panels.forEach(function(p){ p.classList.remove('active'); });
+      var target = document.getElementById(t.dataset.go);
+      if(target) target.classList.add('active');
+      var nav = document.querySelector('nav.tabs');
+      var fixed = nav && window.getComputedStyle(nav).position === 'fixed';
+      var y;
+      if(fixed && target){
+        y = Math.max(0, window.pageYOffset + target.getBoundingClientRect().top - 10);
+      } else {
+        y = nav ? nav.offsetTop : 0;
+      }
+      if(window.pageYOffset > y - 4){ window.scrollTo({top:y, behavior:'auto'}); }
+      else { window.scrollTo({top:y, behavior:'smooth'}); }
+    });
+  });
+
+  /* ---------- normalisation ---------- */
+  function norm(s){
+    return String(s || '')
+      .toLowerCase()
+      .replace(/[\u2018\u2019]/g, "'")
+      .replace(/[.,!?;:"]/g,'')
+      .replace(/\s+/g,' ')
+      .trim();
+  }
+  function accepts(answerAttr, given){
+    var alts = String(answerAttr).split('|');
+    var g = norm(given);
+    for(var i=0;i<alts.length;i++){
+      if(norm(alts[i]) === g) return true;
+    }
+    return false;
+  }
+
+  /* ---------- MCQ selection ---------- */
+  document.querySelectorAll('.mcq[data-q]').forEach(function(group){
+    group.querySelectorAll('.opt').forEach(function(opt){
+      opt.addEventListener('click', function(){
+        if(group.dataset.locked === '1') return;
+        group.querySelectorAll('.opt').forEach(function(o){ o.classList.remove('sel'); });
+        opt.classList.add('sel');
+      });
+    });
+  });
+
+  /* ---------- generic checker ---------- */
+  function showScore(id, right, total){
+    var el = document.getElementById('sc-' + id);
+    if(!el) return;
+    el.textContent = right + ' / ' + total + ' correct';
+    el.className = 'score ' + (right === total ? 'good' : (right >= total*0.6 ? '' : 'bad'));
+  }
+
+  document.querySelectorAll('[data-check]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.dataset.check;
+      var box = document.getElementById(id);
+      if(!box) return;
+      var right = 0, total = 0;
+
+      box.querySelectorAll('input[type=text][data-answer]').forEach(function(inp){
+        total++;
+        inp.classList.remove('correct','wrong');
+        if(accepts(inp.dataset.answer, inp.value)){ inp.classList.add('correct'); right++; }
+        else { inp.classList.add('wrong'); }
+      });
+
+      box.querySelectorAll('select[data-answer]').forEach(function(sel){
+        total++;
+        sel.classList.remove('correct','wrong');
+        var val = sel.value;
+        if(norm(val) === norm(sel.dataset.answer)){ sel.classList.add('correct'); right++; }
+        else { sel.classList.add('wrong'); }
+      });
+
+      box.querySelectorAll('.mcq[data-q]').forEach(function(group){
+        total++;
+        group.dataset.locked = '1';
+        var picked = group.querySelector('.opt.sel');
+        group.querySelectorAll('.opt').forEach(function(o){
+          o.classList.remove('right','wrongpick');
+          if(o.dataset.correct === '1') o.classList.add('right');
+        });
+        if(picked){
+          if(picked.dataset.correct === '1'){ right++; }
+          else { picked.classList.add('wrongpick'); }
+        }
+      });
+
+      showScore(id, right, total);
+    });
+  });
+
+  /* ---------- reset ---------- */
+  document.querySelectorAll('[data-reset]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.dataset.reset;
+      var box = document.getElementById(id);
+      if(!box) return;
+      box.querySelectorAll('input[type=text]').forEach(function(i){ i.value=''; i.classList.remove('correct','wrong'); });
+      box.querySelectorAll('select').forEach(function(s){ s.value=''; s.classList.remove('correct','wrong'); });
+      box.querySelectorAll('.mcq[data-q]').forEach(function(g){
+        g.dataset.locked='0';
+        g.querySelectorAll('.opt').forEach(function(o){ o.classList.remove('sel','right','wrongpick'); });
+      });
+      box.querySelectorAll('.tf').forEach(function(b){ b.classList.remove('sel','right','wrongpick'); });
+      box.querySelectorAll('.expl').forEach(function(e){ e.classList.remove('show'); });
+      var sc = document.getElementById('sc-' + id);
+      if(sc){ sc.textContent=''; sc.className='score'; }
+    });
+  });
+
+  /* ---------- TFNG ---------- */
+  document.querySelectorAll('[data-tfng] .tfng-item').forEach(function(item){
+    item.querySelectorAll('.tf').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if(item.dataset.locked === '1') return;
+        item.querySelectorAll('.tf').forEach(function(b){ b.classList.remove('sel'); });
+        btn.classList.add('sel');
+      });
+    });
+  });
+
+  document.querySelectorAll('[data-checktf]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.dataset.checktf;
+      var box = document.getElementById(id);
+      if(!box) return;
+      var right = 0, total = 0;
+      box.querySelectorAll('.tfng-item').forEach(function(item){
+        total++;
+        item.dataset.locked = '1';
+        var correct = item.dataset.ans;
+        var picked = item.querySelector('.tf.sel');
+        item.querySelectorAll('.tf').forEach(function(b){
+          b.classList.remove('right','wrongpick');
+          if(b.dataset.v === correct) b.classList.add('right');
+        });
+        if(picked){
+          if(picked.dataset.v === correct){ right++; }
+          else { picked.classList.add('wrongpick'); }
+        }
+        var e = item.querySelector('.expl');
+        if(e) e.classList.add('show');
+      });
+      showScore(id, right, total);
+    });
+  });
+
+  /* ---------- timers ---------- */
+  var timers = {};
+  function fmt(s){ var m=Math.floor(s/60), r=s%60; return (m<10?'0':'')+m+':'+(r<10?'0':'')+r; }
+  function setClock(name, secs, state){
+    document.querySelectorAll('[data-clock="'+name+'"]').forEach(function(el){
+      el.textContent = fmt(secs);
+      el.classList.remove('run','done');
+      if(state) el.classList.add(state);
+    });
+  }
+  document.querySelectorAll('[data-start]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.dataset.start;
+      var secs = parseInt(btn.dataset.secs, 10);
+      if(timers[name]) clearInterval(timers[name].id);
+      var left = secs;
+      setClock(name, left, 'run');
+      timers[name] = { id: setInterval(function(){
+        left--;
+        if(left <= 0){ clearInterval(timers[name].id); setClock(name, 0, 'done'); return; }
+        setClock(name, left, 'run');
+      }, 1000), total: secs };
+    });
+  });
+  document.querySelectorAll('[data-stop]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btn.dataset.stop.split(',').forEach(function(name){
+        name = name.trim();
+        if(timers[name]) clearInterval(timers[name].id);
+        var starter = document.querySelector('[data-start="'+name+'"]');
+        var secs = starter ? parseInt(starter.dataset.secs,10) : 0;
+        setClock(name, secs, null);
+      });
+    });
+  });
+
+  /* ---------- tracker ---------- */
+  var trackBoxes = [];
+  document.querySelectorAll('[data-track] input[type=checkbox]').forEach(function(cb){ trackBoxes.push(cb); });
+  var total = trackBoxes.length;
+  ['ttotal','fabtot','s6total'].forEach(function(id){ var el=document.getElementById(id); if(el) el.textContent = total; });
+
+  var messages = [
+    'Nothing transmitted yet.',
+    'Signal detected. Keep going.',
+    'Coming through — about a quarter of the way.',
+    'Halfway. It\u2019s starting to sound natural.',
+    'Strong signal. Most of the set is active now.',
+    'Nearly there — pick off the last few.',
+    'Full strength. Message received.'
+  ];
+
+  function updateTracker(){
+    var n = 0;
+    trackBoxes.forEach(function(cb){ if(cb.checked) n++; });
+    ['tcount','fabnum','s6count'].forEach(function(id){ var el=document.getElementById(id); if(el) el.textContent = n; });
+    var ratio = total ? n/total : 0;
+    var lit = 0;
+    document.querySelectorAll('[data-meter]').forEach(function(m){
+      var bars = m.querySelectorAll('i');
+      lit = Math.round(ratio * bars.length);
+      bars.forEach(function(b, i){ b.classList.toggle('on', i < lit); });
+    });
+    var fill = document.getElementById('tfill');
+    if(fill) fill.style.width = (ratio*100).toFixed(1) + '%';
+    var msg = messages[Math.min(lit, messages.length-1)];
+    ['tmsg','s6msg'].forEach(function(id){ var el=document.getElementById(id); if(el) el.textContent = msg; });
+    store.set('u3p2-tracker', trackBoxes.map(function(cb){ return cb.checked ? 1 : 0; }));
+  }
+  trackBoxes.forEach(function(cb){ cb.addEventListener('change', updateTracker); });
+
+  var panel = document.getElementById('tpanel');
+  var fab = document.getElementById('fab');
+  function setPanel(open){
+    if(!panel || !fab) return;
+    panel.classList.toggle('open', open);
+    fab.style.display = open ? 'none' : 'flex';
+    fab.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  if(fab) fab.addEventListener('click', function(){ setPanel(true); });
+  var closeBtn = document.getElementById('tclose');
+  if(closeBtn) closeBtn.addEventListener('click', function(){ setPanel(false); });
+  var openBtn = document.getElementById('openTracker');
+  if(openBtn) openBtn.addEventListener('click', function(){ setPanel(true); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setPanel(false); });
+  var resetBtn = document.getElementById('treset');
+  if(resetBtn) resetBtn.addEventListener('click', function(){
+    trackBoxes.forEach(function(cb){ cb.checked = false; });
+    updateTracker();
+  });
+
+  Promise.resolve(store.get('u3p2-tracker')).then(function(saved){
+    if(saved && saved.length === total){ trackBoxes.forEach(function(cb,i){ cb.checked = !!saved[i]; }); }
+    updateTracker();
+  }).catch(function(){ updateTracker(); });
+
+  /* ---------- ranking (UI only) ---------- */
+  document.querySelectorAll('#rank select[data-rank]').forEach(function(sel){
+    sel.addEventListener('change', function(){
+      sel.style.borderColor = sel.value ? '#FF2E93' : '';
+      sel.style.color = sel.value ? '#FF2E93' : '';
+    });
+  });
+
+  /* ---------- tap to load the video ---------- */
+  var vidBtn = document.getElementById('vidplay');
+  if(vidBtn){
+    vidBtn.addEventListener('click', function(){
+      var box = document.getElementById('vid');
+      var id = box.dataset.yt;
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+      f.title = 'Call centres: Are you talking to AI? - BBC Learning English';
+      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      f.setAttribute('allowfullscreen','');
+      f.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+      box.innerHTML = '';
+      box.appendChild(f);
+    });
+  }
+
+  /* ---------- mobile passage drawer ---------- */
+  var peekBtn = document.getElementById('peekBtn');
+  if(peekBtn){
+    var drawer = null;
+    peekBtn.addEventListener('click', function(){
+      if(!drawer){
+        var src = document.querySelector('.passage.pin');
+        if(!src) return;
+        drawer = document.createElement('div');
+        drawer.className = 'peek';
+        drawer.innerHTML = '<h5>Reading passage</h5>' + src.innerHTML.replace(/<div class="src">[\s\S]*?<\/div>/,'');
+        document.body.appendChild(drawer);
+      }
+      var open = drawer.classList.toggle('open');
+      peekBtn.textContent = open ? '▼ Hide the passage' : '▲ Show the passage while I answer';
+    });
+  }
+
+  /* ---------- results report ---------- */
+  function buildReport(){
+    var lines = [];
+    lines.push('IELTS · Means of communication — my results');
+    lines.push('');
+    var any = false;
+
+    document.querySelectorAll('[data-label]').forEach(function(box){
+      var id = box.id;
+      var sc = document.getElementById('sc-' + id);
+      var label = box.dataset.label;
+      if(!sc || !sc.textContent){
+        lines.push('· ' + label + ': not done yet');
+        return;
+      }
+      any = true;
+      lines.push('· ' + label + ': ' + sc.textContent.replace(' correct',''));
+
+      var wrong = [];
+      var n = 0;
+      box.querySelectorAll('input[type=text][data-answer]').forEach(function(inp){
+        n++;
+        if(inp.classList.contains('wrong')){
+          wrong.push('   Q' + n + ' I put "' + (inp.value || '—') + '" → ' + inp.dataset.answer.split('|')[0]);
+        }
+      });
+      n = 0;
+      box.querySelectorAll('.mcq[data-q]').forEach(function(g){
+        n++;
+        var picked = g.querySelector('.opt.wrongpick');
+        if(picked){
+          var right = g.querySelector('.opt.right');
+          wrong.push('   Q' + n + ' I put "' + picked.textContent.trim() + '" → ' + (right ? right.textContent.trim() : ''));
+        }
+      });
+      n = 0;
+      box.querySelectorAll('.tfng-item').forEach(function(it){
+        n++;
+        var picked = it.querySelector('.tf.wrongpick');
+        if(picked){
+          wrong.push('   Q' + n + ' I put ' + picked.dataset.v + ' → ' + it.dataset.ans);
+        }
+      });
+      wrong.forEach(function(w){ lines.push(w); });
+    });
+
+    var ticked = 0, totalT = 0;
+    document.querySelectorAll('[data-track] input[type=checkbox]').forEach(function(cb){
+      totalT++;
+      if(cb.checked) ticked++;
+    });
+    lines.push('');
+    lines.push('Vocabulary used today: ' + ticked + '/' + totalT);
+    if(!any) lines.push('(Nothing checked yet — press "Check answers" in an exercise first.)');
+    return lines.join('\n');
+  }
+
+  var buildBtn = document.getElementById('buildReport');
+  var copyBtn = document.getElementById('copyReport');
+  var reportBox = document.getElementById('reportBox');
+  var reportText = document.getElementById('reportText');
+  var copyState = document.getElementById('copyState');
+
+  if(buildBtn) buildBtn.addEventListener('click', function(){
+    reportText.value = buildReport();
+    reportBox.classList.add('show');
+    if(copyState){ copyState.textContent = ''; copyState.className = 'score'; }
+  });
+
+  if(copyBtn) copyBtn.addEventListener('click', function(){
+    if(!reportText.value) reportText.value = buildReport();
+    reportBox.classList.add('show');
+    var done = function(){
+      if(copyState){ copyState.textContent = 'Copied — now paste it into the chat'; copyState.className = 'score good'; }
+    };
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(reportText.value).then(done).catch(function(){
+          reportText.removeAttribute('readonly');
+          reportText.select();
+          try{ document.execCommand('copy'); done(); }catch(e){
+            if(copyState){ copyState.textContent = 'Select the text above and copy it'; copyState.className = 'score'; }
+          }
+          reportText.setAttribute('readonly','');
+        });
+        return;
+      }
+      reportText.removeAttribute('readonly');
+      reportText.select();
+      document.execCommand('copy');
+      reportText.setAttribute('readonly','');
+      done();
+    }catch(e){
+      if(copyState){ copyState.textContent = 'Select the text above and copy it'; copyState.className = 'score'; }
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
